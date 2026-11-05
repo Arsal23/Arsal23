@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="110" viewBox="0 0 480 110" role="img" aria-label="Try to unfollow me - the button runs away and turns into Follow">
+  <style>
+    .font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    #btn { animation: dodge 7s ease-in-out infinite; transform-box: view-box; }
+    #unf { animation: showUnf 7s steps(1,end) infinite; }
+    #fol { animation: showFol 7s steps(1,end) infinite; }
+    #cursor { animation: chase 7s ease-in-out infinite; }
+    #click { animation: clickRing 7s ease-out infinite; transform-origin: 240px 52px; transform-box: view-box; opacity: 0; }
+    #t1 { animation: say1 7s infinite; opacity: 0; }
+    #t2 { animation: say2 7s infinite; opacity: 0; }
+    #t3 { animation: say3 7s infinite; opacity: 0; }
+    #sweat { animation: sweat 7s infinite; opacity: 0; }
+
+    @keyframes dodge {
+      0%, 15%  { transform: translate(0px, 0px); }
+      19%      { transform: translate(-150px, -5px) rotate(-6deg); }
+      22%, 34% { transform: translate(-150px, 0px); }
+      38%      { transform: translate(150px, -5px) rotate(6deg); }
+      41%, 53% { transform: translate(150px, 0px); }
+      60%, 100%{ transform: translate(0px, 0px); }
+    }
+    @keyframes showUnf { 0% { opacity: 1; } 58% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes showFol { 0% { opacity: 0; } 58% { opacity: 1; } 100% { opacity: 1; } }
+
+    @keyframes chase {
+      0%       { transform: translate(200px, 30px); }
+      15%      { transform: translate(20px, 6px); }
+      19%      { transform: translate(6px, 6px); }
+      34%      { transform: translate(-128px, 6px); }
+      38%      { transform: translate(-140px, 6px); }
+      53%      { transform: translate(168px, 6px); }
+      58%      { transform: translate(176px, 6px); }
+      70%      { transform: translate(10px, 6px); }
+      73%      { transform: translate(10px, 9px); }
+      76%      { transform: translate(10px, 6px); }
+      100%     { transform: translate(200px, 30px); }
+    }
+    @keyframes clickRing {
+      0%, 72% { opacity: 0; transform: scale(0.4); }
+      74%     { opacity: 0.9; transform: scale(0.6); }
+      84%     { opacity: 0; transform: scale(1.6); }
+      100%    { opacity: 0; }
+    }
+    @keyframes say1 { 0%,17% {opacity:0} 20%,33% {opacity:1} 36%,100% {opacity:0} }
+    @keyframes say2 { 0%,36% {opacity:0} 39%,52% {opacity:1} 55%,100% {opacity:0} }
+    @keyframes say3 { 0%,74% {opacity:0} 77%,97% {opacity:1} 100% {opacity:0} }
+    @keyframes sweat { 0%,18% {opacity:0} 21%,53% {opacity:1} 57%,100% {opacity:0} }
+  </style>
+
+  <!-- speech bubbles -->
+  <g class="font" font-size="14" font-weight="600" text-anchor="middle">
+    <text id="t1" x="240" y="20" fill="#e5534b">Nice try 😏</text>
+    <text id="t2" x="240" y="20" fill="#e5534b">Not today! 🏃‍♂️💨</text>
+    <text id="t3" x="240" y="20" fill="#2da44e">Thanks for following! 💚</text>
+  </g>
+
+  <!-- the button -->
+  <g id="btn">
+    <g id="unf">
+      <rect x="175" y="34" width="130" height="36" rx="8" fill="#ffebe9" stroke="#e5534b" stroke-width="1.5"/>
+      <text class="font" x="240" y="57" font-size="15" font-weight="600" fill="#cf222e" text-anchor="middle">✖ Unfollow</text>
+      <text id="sweat" x="303" y="38" font-size="14">💦</text>
+    </g>
+    <g id="fol">
+      <rect x="175" y="34" width="130" height="36" rx="8" fill="#2da44e" stroke="#1a7f37" stroke-width="1.5"/>
+      <text class="font" x="240" y="57" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">✔ Follow</text>
+    </g>
+  </g>
+
+  <!-- click ripple -->
+  <circle id="click" cx="240" cy="52" r="26" fill="none" stroke="#2da44e" stroke-width="3"/>
+
+  <!-- cursor (tip sits at 240,52 before translate) -->
+  <g id="cursor">
+    <path d="M240 52 l0 22 l6 -6 l4 9 l4 -2 l-4 -9 l8 0 z" fill="#ffffff" stroke="#24292f" stroke-width="1.6" stroke-linejoin="round"/>
+  </g>
+
+  <text class="font" x="240" y="102" font-size="11" fill="#8b949e" text-anchor="middle">Go on, try to unfollow me 😉</text>
+</svg>
