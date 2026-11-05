@@ -6,6 +6,10 @@
   <a href="https://github.com/Arsal23?tab=followers"><img src="https://img.shields.io/github/followers/Arsal23?label=Follow&style=social" alt="follow" /></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Arsal23"><img src="./assets/unfollow-challenge.svg" alt="Try to unfollow me" /></a>
+</p>
+
 ---
 
 ### 🚀 About me
@@ -64,17 +68,12 @@
 ### 📊 GitHub stats
 
 <p align="center">
-  <img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Profile details" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Arsal23&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arsal23&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repos per language" />
-  <img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most commit language" />
-</p>
-
-<p align="center">
-  <img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" />
-  <img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive time" />
+  <img src="https://streak-stats.demolab.com?user=Arsal23&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
 ---
